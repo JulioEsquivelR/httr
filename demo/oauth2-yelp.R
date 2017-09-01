@@ -38,6 +38,6 @@ url <- modify_url(
   )
 )
 
-req <- GET(url, config(token = token))
+req <- GET(url, config(token = yelp_token))
 stop_for_status(req)
 content(req)
